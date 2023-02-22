@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Tracking</title>
+    <script src="./script.js"></script>
+    <style>
+        button {
+            appearance: none;
+            background-color: #462ea4;
+            border: 1px solid rgba(27, 31, 35, .15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 6px 16px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            margin-left: 100px;
+          }
+          body{
+            background-image: url(https://img.freepik.com/free-vector/corporate-website-abstract-concept-illustration-official-company-website-business-online-representation-corporate-vision-page-web-development-graphic-design-service_335657-354.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            background-size: 55%;
+          }
+          button {
+            appearance: none;
+            background-color: #462ea4;
+            border: 1px solid rgba(27, 31, 35, .15);
+            border-radius: 16px;
+            box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 3px 13px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            margin-left: 750px;
+            margin-top:25px
+          }
+          form{
+            margin-top: 255px;
+            margin-left: 600px;
+
+          }
+          input{
+            font-size: 16px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border: solid 2px rgb(28, 3, 98);
+            border-radius: 10px;
+            padding: 3px;
+            
+          }
+          label{
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+          }
+          #res{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            font-size: 18px; 
+            margin-left: 680px;
+            margin-right:530px;
+          }
+          h1{
+            font-size:50px;
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             margin-top:-350px;
+             margin-left: 480px;
+             color:rgb(137, 42, 154)
+          }
+    </style>
+</head>
+
+<body>
+    <form>
+        
+    <label for="tid">Tracking Id:</label> 
+    <input type="number" name="tid" id="tid">
+    
+</form>
+<br/>
+    <button onclick="track()">Track Status</button>
+    <p id="res"></p>
+    <h1>Leave Request Tracking</h1>
+
+</body>
+</html>

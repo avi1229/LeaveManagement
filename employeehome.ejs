@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Home</title>
+    <style>
+        body{
+            background-image: url(https://www.myschoolr.com/img/bonafide/documents.png);
+            background-color:lightcyan;
+
+        }
+        button {
+            appearance: none;
+            background-color: #e74b84;
+            border: 1px solid rgba(27, 31, 35, .15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 10px 22px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            margin-left: 100px;
+          }
+          
+    </style>
+</head>
+<body>
+    <h1 style="padding-left: 100px;color:darkslategray; font-size:50px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Welcome <%= data.name %></h1>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <form action="/myleaves">
+    <button>My Leaves</button>
+
+</form>
+<br/>
+<br/>
+<br/>
+<form action="/applyleave">
+    <button>Apply For Leave</button>
+</form>
+<br/>
+<br/>
+<br/>
+    <form action="/trackleave">
+    <button type="submit">Track Leave Status</button>
+</form>
+<br/>
+<br/>
+<br/>
+    <form action="/logout">
+    <button type="submit">Logout</button>
+</form>
+</body>
+</html>

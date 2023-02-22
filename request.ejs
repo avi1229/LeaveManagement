@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" >
+<script src="script.js"></script>
+    <title>Leave Management System</title>
+    <style>
+      body{
+        background-color: whitesmoke;
+        background-repeat: no-repeat;
+        background-position: 600px;
+      }
+      form{
+        
+        border-radius: 20px;
+        margin-left: 150px;
+        /*background-image: url("https://img.freepik.com/premium-vector/light-colored-abstract-background-with-circles-stars-lines_78007-600.jpg?w=2000");
+        */background-repeat: no-repeat;
+        background-color: aliceblue;
+        background-size: 650px;
+        background-position: -150px;
+        padding: 10px;
+        padding-bottom: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 935px;
+        margin-top: 30px;
+        border: solid 2px black;
+              }
+      input{
+        margin: 15px;
+        font-size: 18px;
+        
+      }
+      label{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: teal;
+        margin-left: 30px;
+      }
+      .ip{
+        border-radius: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: solid 3px teal;
+        margin-left: 100px;
+      }
+      button {
+        appearance: none;
+        background-color: #2ea44f;
+        border: 1px solid rgba(27, 31, 35, .15);
+        border-radius: 15px;
+        box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 10px 16px;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        vertical-align: middle;
+        white-space: nowrap;
+        margin-left: 150px;
+
+      }
+      #reason{
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 20px;
+        border: solid 3px teal;
+
+      }
+      #head{
+        margin-left:10px;
+        margin-right:50px;
+        padding:10px;
+        font-size:40px; 
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#206d36;
+      }
+    </style>
+  </head>
+  <body style="background-image: url(https://dashtechinc.com/wp-content/uploads/2020/03/UI-UX-Design-Hero-Banner.png);">
+  
+      <form id="myform" action="/success" method="post" style="margin-left:80px">
+    
+    <h1 id="head"><b>Leave Request Form</b></h1>
+    <label for="name">Name: </label>
+    <input class="ip" type="text" id="name" name="Uname" value="<%=Uname%>" required>
+    <br/>
+    <br/>
+    <label for="email">Email : </label>
+    <input class="ip" type="email" id="email" name="email" required value="<%=email%>"style="margin-left: 70px; width:250px;font-size:15px">
+    <br/>
+    <br/>
+    <label for="stdt">Start Date : </label>
+    <input class="ip" type="datetime-local" id="stdt" name="stdt" style="margin-left: 60px;" required>
+    <br/>
+    <br/>
+    <label for="enddt">End Date : </label>
+    <input class="ip" type="datetime-local" id="enddt" name="enddt" style="margin-left: 60px;" required>
+        <br/>
+        <br/>
+        <label for="cars">Type of Leave: </label>
+<select class="ip" id="type1" name="type" style="margin-left: 25px;" required>
+  <option value="">Select</option>
+  <option value="Casual Leave">Casual Leave</option>
+  <option value="Sick Leave">Sick Leave</option>
+  <option value="Marriage Leave">Marriage Leave</option>
+  <option value="Annual Leave">Annual Leave</option>
+  <option value="Others">Others</option>
+</select>
+    <br/>
+    <br/>
+    <label for="reason">Reason:  </label>
+    <textarea class="ip" id="reason" name="reason" style="margin-left: 80px;" required></textarea>
+    <br/>
+    <br/>
+    <button type="submit">Submit Request</button>
+    <br/>
+    <br/>
+  </form>
+  
+     </body>
+</html>
